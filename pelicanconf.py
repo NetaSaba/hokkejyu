@@ -15,6 +15,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+OUTPUT_PATH = 'docs/'
+
+
 MARKUP = ('md', 'ipynb')  # Include 'md' if using Markdown
 # THEME = "themes/pelican-mediumfox"
 
