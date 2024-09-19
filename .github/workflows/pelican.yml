@@ -1,29 +1,45 @@
-name: Pelican site CI
+name: Build and Deploy Pelican Site
 
 on:
   push:
     branches:
-      - main
+      - main  # 當推送到 main 分支時觸發
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    # Step 1: 檢出代碼
+    - name: Checkout repository
       uses: actions/checkout@v2
 
+    # Step 2: 設置 Python 環境
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
 
+    # Step 3: 安裝 Pelican 和其他依賴
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install pelican markdown typogrify  # 根據需求加入其他依賴
+        pip install -r requirements.txt  # 如果有 `requirements.txt`
 
-    - name: Build and Deploy Pelican site to GitHub Pages
-      uses: nelsonjchen/gh-pages-pelican-action@0.2.0
+    # Step 4: 構建 Pelican 網站
+    - name: Build the Pelican site
+      run: |
+        pelican content -s publishconf.py  # 使用 publishconf.py 作為配置文件
+
+    # Step 5: 部署到 gh-pages 分支
+    - name: Deploy to GitHub Pages
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        # 將構建好的內容推送到 gh-pages 分支
+        git add output/
+        git commit -m "Deploy Pelican site to GitHub Pages"
+        git push -f origin `git subtree split --prefix output main`:gh-pages
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 這是 GitHub 自動提供的 Token，用來推送內容
