@@ -32,19 +32,24 @@ jobs:
         pip install pelican markdown typogrify  # 根據需求加入其他依賴
         pip install -r requirements.txt  # 如果有 `requirements.txt`
 
-    # Step 4: 構建 Pelican 網站
+    # Step 4: 構建 Pelican 網站並輸出到 docs 資料夾
     - name: Build the Pelican site
       run: |
-        pelican content -s publishconf.py  # 使用 publishconf.py 作為配置文件
+        pelican content -s publishconf.py -o docs  # 使用 publishconf.py 作為配置文件，輸出到 docs 資料夾
 
     # Step 5: 部署到 gh-pages 分支
     - name: Deploy to GitHub Pages
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
+        git fetch origin
+        git worktree add gh-pages
+        cd gh-pages
+        rm -rf *  # 清除 gh-pages 分支的現有內容
+        cp -r ../docs/* ./  # 將 docs 資料夾的內容複製到 gh-pages 根目錄
         git add .
         git commit -m "Deploy Pelican site to GitHub Pages"
-        git push origin HEAD:refs/heads/gh-pages
+        git push origin gh-pages --force
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 這是 GitHub 自動提供的 Token，用來推送內容
