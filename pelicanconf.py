@@ -75,17 +75,17 @@ PAGE_LANG_SAVE_AS = '{lang}/pages/{slug}.html'
 
 # 在導航欄中添加語言切換選項
 LINKS = (
-    ('English', '/en/'),
-    ('中文', '/zh/'),
-    ('日本語', '/ja/'),
-    ('한국어', '/ko/'),
+    ('English', 'https://netasaba.github.io/hokkejyu/en/'),
+    ('台灣中文', 'https://netasaba.github.io/hokkejyu/zh_TW/'),
+    ('日本語', 'https://netasaba.github.io/hokkejyu/ja/'),
+    ('한국어', 'https://netasaba.github.io/hokkejyu/ko/'),
 )
 
 # Social widget
 SOCIAL = (
-    ("Hollen9 個人網站", "https://hollen9.com"),
-    ("Twitter 推特", "https://twitter.com/hollen9"),
-    ("Steam 個人頁面", "https://steamcommunity.com/id/hollen9")
+    ("Hollen9 Web", "https://hollen9.com"),
+    ("Twitter", "https://twitter.com/hollen9"),
+    ("Steam", "https://steamcommunity.com/id/hollen9")
 )
 
 DEFAULT_PAGINATION = 10
