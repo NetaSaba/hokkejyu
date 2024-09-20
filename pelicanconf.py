@@ -1,6 +1,6 @@
 AUTHOR = 'Hollen9'
 SITENAME = 'Hokkejyu'
-SITEURL = ""
+SITEURL = "https://netasaba.github.io/hokkejyu"
 
 PATH = "content"
 
