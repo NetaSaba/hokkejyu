@@ -2,9 +2,10 @@ Title: Hokkejyururi!
 Date: 2024-09-20
 Category: 首頁
 Tags: page
-Slug: hp
+slug: index
 Author: Hollen9
 Summary: Hokkejyu
+lang: zh_TW
 
 目前努力製作 Hokkejyu 伺服器中，目前已經完成的部分如下
 
@@ -19,5 +20,5 @@ Summary: Hokkejyu
 - Saysound 整合 Mameiro鯖、Kuromekuro 伺服器
 - 人物模組使用 Kuromekuro 人物模組，並整合 Steam Workshop 各方的免費資源
 
-還有很多功能沒有實裝，目前正在製作 worldtext 選單。
-**敬請期待！**
+還有很多功能沒有實裝，目前正在製作 worldtext 選單。 **敬請期待！**
+
