@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hokkejyu - ホームページ</title><link href="https://netasaba.github.io/hokkejyu/" rel="alternate"></link><link href="https://netasaba.github.io/hokkejyu/feeds/ho-mupe-zi.atom.xml" rel="self"></link><id>https://netasaba.github.io/hokkejyu/</id><updated>2024-09-20T00:00:00+08:00</updated><entry><title>Hokkejyururi!</title><link href="https://netasaba.github.io/hokkejyu/ja/index.html" rel="alternate"></link><published>2024-09-20T00:00:00+08:00</published><updated>2024-09-20T00:00:00+08:00</updated><author><name>Hollen9</name></author><id>tag:netasaba.github.io,2024-09-20:/hokkejyu/ja/index.html</id><summary type="html">&lt;p&gt;Hokkejyu WIP&lt;/p&gt;</summary><content type="html">&lt;p&gt;現在、Hokkejyuサーバーを鋭意製作中です。現在完了している部分は以下の通りです：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一般的なラウンドでの爆弾設置&lt;/li&gt;
+&lt;li&gt;エリート敵（中ボス）システム、Chisato、Pine、Zakiyamaを含む&lt;/li&gt;
+&lt;li&gt;自動チームバランスシステム：HPや味方BOT数を調整&lt;/li&gt;
+&lt;li&gt;勝利回数に応じた難易度の調整&lt;/li&gt;
+&lt;li&gt;!resで復活&lt;/li&gt;
+&lt;li&gt;BGM 機能&lt;/li&gt;
+&lt;li&gt;テーマローテーションシステム：Phantom Breaker、VoiceVox-01、VoiceVox-02の音楽テーマを含む&lt;/li&gt;
+&lt;li&gt;ピッチ付きの saysound 機能（Mameiroサーバースタイル：QFRSDを採用）&lt;/li&gt;
+&lt;li&gt;Saysound は MameiroサーバーとKuromekuroサーバーに統合&lt;/li&gt;
+&lt;li&gt;キャラクターモデルはKuromekuroのモデルを使用し、Steam Workshopの無料リソースを統合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;まだ多くの機能が未実装です。現在、worldtextメニューを製作中です。&lt;strong&gt;お楽しみに！&lt;/strong&gt;&lt;/p&gt;</content><category term="ホームページ"></category><category term="page"></category></entry></feed>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hokkejyu - Home</title><link href="https://netasaba.github.io/hokkejyu/" rel="alternate"></link><link href="https://netasaba.github.io/hokkejyu/feeds/home.atom.xml" rel="self"></link><id>https://netasaba.github.io/hokkejyu/</id><updated>2024-09-20T00:00:00+08:00</updated><entry><title>Hokkejyururi!</title><link href="https://netasaba.github.io/hokkejyu/en/index.html" rel="alternate"></link><published>2024-09-20T00:00:00+08:00</published><updated>2024-09-20T00:00:00+08:00</updated><author><name>Hollen9</name></author><id>tag:netasaba.github.io,2024-09-20:/hokkejyu/en/index.html</id><summary type="html">&lt;p&gt;Hokkejyu WIP&lt;/p&gt;</summary><content type="html">&lt;p&gt;Currently working hard on the Hokkejyu server. The completed parts so far are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General rounds with bomb planting&lt;/li&gt;
+&lt;li&gt;Elite enemy (mid-BOSS) system, including Chisato, Pine, Zakiyama&lt;/li&gt;
+&lt;li&gt;Automatic team balancing system: adjusts HP and friendly BOT count&lt;/li&gt;
+&lt;li&gt;Difficulty scaling based on the number of wins&lt;/li&gt;
+&lt;li&gt;!res to revive&lt;/li&gt;
+&lt;li&gt;Music functionality&lt;/li&gt;
+&lt;li&gt;Theme rotation system: includes music themes from Phantom Breaker, VoiceVox-01, and VoiceVox-02&lt;/li&gt;
+&lt;li&gt;Saysound feature with pitch variation (using Mameiro server style: QFRSD)&lt;/li&gt;
+&lt;li&gt;Saysound integration with Mameiro server and Kuromekuro server&lt;/li&gt;
+&lt;li&gt;Character models use Kuromekuro's character models, integrated with various free resources from the Steam Workshop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many features are still under development. Currently working on the worldtext menu. &lt;strong&gt;Stay tuned!&lt;/strong&gt;&lt;/p&gt;</content><category term="Home"></category><category term="page"></category></entry></feed>
